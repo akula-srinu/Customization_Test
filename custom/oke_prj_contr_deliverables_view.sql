@@ -1,0 +1,10 @@
+-- 07-Apr-2011 HChodavarapu Verified for 602 build.
+@utlspon oke_prj_contr_deliverables_view
+set escape off;
+Insert into N_VIEW_TEMPLATES
+   (VIEW_LABEL, APPLICATION_LABEL, DESCRIPTION, PROFILE_OPTION, ESSAY, KEYWORDS, PRODUCT_VERSION, EXPORT_VIEW, SECURITY_CODE, SPECIAL_PROCESS_CODE, FREEZE_FLAG, CREATED_BY, CREATION_DATE, LAST_UPDATED_BY, LAST_UPDATE_DATE, ORIGINAL_VERSION, CURRENT_VERSION)
+ Values
+   ('OKE_Prj_Contr_Deliverables', 'OKE', 'OKE Basic - Deliverable line information', 'OKE_1159_ONWARDS', 'This view returns information of deliverable line and the associated projects (if any), of the project contracts. This information was supplied in the Deliverables Tracking System window of the Project Contracts module in Oracle E-Business suite. A record is returned for each combination of a contract number, contract type and line number and deliverable line number. Use this view for getting information about contracts that are associated with the project. Use this view to track the current status of contracts. This view returns contract details like contract number, type and status. The view provides information of deliverable lines such as deliverable number, status, start date, end date, quantity. The view also provides details about the project, and tasks. The Default_Deliverable_Flag column indicates whether the deliverable line is the default one or not. The Subcontracted_Flag column indicates whether or not the manufacturing of an item is subcontracted. The Drop_Ship_Flag column indicates whether or not the item can be drop-shipped. Billable_Flag column indicates whether or not the line can be billed. Hold_Flag column indicates whether or not the contract is on hold. For optimal performance, filter the records by the Contract_Number, Contract_Line_Number, and Deliverable_Number columns.', 'K{\footnote Deliverable} K{\footnote Contract Lines} K{\footnote Project Contracts}', '11.5+', 'Y', 'NONE', 'NONE', 'N', 'kkondaveeti', TO_DATE('07/11/2008 04:13:00', 'MM/DD/YYYY HH24:MI:SS'), 'jbhattacharya', TO_DATE('07/21/2008 04:32:00', 'MM/DD/YYYY HH24:MI:SS'), '5.7.1.383', '5.7.1.383');
+COMMIT;
+set escape on;
+@utlspoff

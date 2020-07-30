@@ -1,0 +1,48 @@
+/*=============================================================================+
++ Name:  NOETIX_VIEWS.VSAT_NOETIX_CONC_REQUESTS.pkg                           |
+|                                                                             |
+|History:                                                                     |
+|=============================================================================|
+| DATE      	| Author             	| Comments                            |==============================================================================|
+|11-SEP-2019	|Selwyn Dorairaj		|CDS-1736 - initial create for POC
+|
+|                                                                             
++============================================================================*/
+
+@utlspon VSAT_NOETIX_CONC_REQUESTS
+
+create or replace package noetix_views.vsat_noetix_conc_requests as
+procedure csi_txn_errors_stats(errbuf out varchar2
+                        ,retcode out varchar2);
+End;
+/
+
+CREATE OR REPLACE package body noetix_views.vsat_noetix_conc_requests as
+procedure csi_txn_errors_stats(errbuf out varchar2
+                        ,retcode out varchar2) as
+cursor ctrans is (SELECT TRUNC (SYSDATE)  as_of_date,
+                                  transaction_type ,
+                                   COUNT (*) AS ERROR_COUNT
+                         FROM CSIG0_TXN_ERRORS_PROCESSING_VS
+                  GROUP BY TRUNC (SYSDATE), transaction_type, ORGANIZATION_CODE);
+trans_rec   ctrans%rowtype;
+BEGIN
+For trans_rec in ctrans loop
+	EXIT when  ctrans%notfound;
+    Insert into NOETIX_VIEWS.CSIGO_TXN_ERROR_STATUS_VSAT(as_of_date,
+                                        transaction_type,
+                                        error_count)
+        Values
+            (trans_rec.as_of_date,trans_rec.transaction_type,trans_rec.error_count);
+    Commit;
+End Loop;
+EXCEPTION
+When OTHERS then
+    errbuf := SQLERRM;
+    retcode := 2;
+End;
+
+END;
+/
+
+@utlspoff

@@ -1,0 +1,25 @@
+-- Title
+--    wnoetxu9.sql
+-- Function
+--    Perform customer update sql processes
+--    will be custom for each update release
+--
+-- Description
+--    Do nothing for this release
+--
+-- Copyright Noetix Corporation 1992-2016  All Rights Reserved
+--
+-- History
+--   20-Nov-94 D Cowles
+--   11-Dec-00 D Glancy   Update Copyright info.
+--   12-Nov-01 D Glancy   Update copyright info. (Issue #5285)
+--   23-Feb-04 D Glancy   Update Copyright Info. (Issue 11982)
+--   03-Nov-04 D Glancy   Update Copyright Info. (Issue 13498)
+--   22-Sep-05 D Glancy   Update copyright info. (Issue 15175)
+--   21-May-08 D Glancy   Open up additional modules for r12 support. (Issue 18126)
+--   28-May-08 D Glancy   Looks like IGW will not be available for r12 for now.  (Issue 18126)
+--   20-May-08 D Glancy   Add support for CS, CSD, CSF, CSI, EAM, and QA.  (Issue 20398)
+--   15-Sep-08 D Glancy   Moved r12 suppression to xupdate.sql.  (Issue 20745)
+--
+   
+-- end wnoetxu9.sql

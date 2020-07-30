@@ -1,0 +1,33 @@
+-- Title
+--    wnoetxud.sql
+-- Function
+--    Perform customer update sql processes
+--    will be custom for each update release
+--
+-- Description
+--    Do nothing for this release.
+--
+--    If used to add custom applications to worgoe7.sql, use the following
+--    syntax (where 2XXX1 and 2XXX2 are replaced with the custom 
+--    custom applications).  The formula is, place two quotes around each
+--    value, separate each value by a comma and then add an additional 
+--    quote at the beginning and end of the entire string.
+--
+--       define oe_custom_applications='''2XXX1'',''2XXX2'''
+--
+-- Copyright Noetix Corporation 1992-2016  All Rights Reserved
+--
+-- History
+--   21-Jul-95 D Cowles
+--   11-Dec-00 D Glancy   Update Copyright info.
+--   19-Apr-00 H Schmed   Added template for the custom applications used in
+--                        worgoe7.sql.
+--   12-Nov-01 D Glancy   Update copyright info. (Issue #5285)
+--   23-Feb-04 D Glancy   Update Copyright Info. (Issue 11982)
+--   03-Nov-04 D Glancy   Update Copyright Info. (Issue 13498)
+--   22-Sep-05 D Glancy   Update copyright info. (Issue 15175)
+--
+--
+--
+
+-- end wnoetxud.sql

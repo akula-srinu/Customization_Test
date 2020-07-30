@@ -1,0 +1,12 @@
+-- 07-Apr-2011 HChodavarapu Verified for 602 build.
+@utlspon oke_pcontract_articles_query
+
+Insert into N_VIEW_QUERY_TEMPLATES
+   (VIEW_LABEL, QUERY_POSITION, UNION_MINUS_INTERSECTION, GROUP_BY_FLAG, PROFILE_OPTION, PRODUCT_VERSION, VIEW_COMMENT, CREATED_BY, CREATION_DATE, LAST_UPDATED_BY, LAST_UPDATE_DATE)
+ Values
+   ('OKE_PContract_Articles', 1, NULL, 'N', NULL, 
+    NULL, NULL, 'rvattikonda', TO_DATE('03/13/2009 02:47:00', 'MM/DD/YYYY HH24:MI:SS'), 'rvattikonda', 
+    TO_DATE('03/13/2009 02:47:00', 'MM/DD/YYYY HH24:MI:SS'));
+COMMIT;
+
+@utlspoff
