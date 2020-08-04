@@ -1,4 +1,5 @@
-This line is added for testing
+-- This line added by Srinivasa Rao Akula
+
 -- File Name: AP_Invoices_And_Checks_Join_Upd_u2.sql
 --
 -- Date Created: 02-12-2015
