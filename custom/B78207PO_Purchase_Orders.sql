@@ -1,3 +1,5 @@
+-- This line added by Srinivasa Rao Akula
+
 -- *******************************************************************************
 -- FileName:             B78207PO_Purchase_Orders.sql
 -- To be called from wnoetxu2.sql or wnoetxu2_legacy.sql
