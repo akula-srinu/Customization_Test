@@ -1,3 +1,5 @@
+-- This line added by Srinivasa Rao Akula
+
 -- File: BNV1631.sql
 --
 -- To be called from wnoetixu2_legacy.sql or wnoetxu2.sql
