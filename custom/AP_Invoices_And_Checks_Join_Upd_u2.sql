@@ -16,7 +16,7 @@
 -- ===============
 -- Date         Who            Comments
 -- -----------  -------------  ---------
--- 02-12-2015     Srinivas A    Created. 
+-- 02-12-2015     Srinivasa Rao Akula    Created. 
 
 -- This file is called from wnoetxu2.sql
 
