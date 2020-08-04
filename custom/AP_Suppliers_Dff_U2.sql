@@ -1,9 +1,11 @@
+-- This line added by Srinivasa Rao Akula
+
 -- Title AP_Suppliers_Dff_U2.sql
 -- Hookscript to get Ap_Suppliers DFF
 -- To be called in wnoetxu2.sql
 -- Salesforce Incident No. 77053
 -- Created by Apatel 19th Jan 2016
--- This line added by Srinivasa Rao Akula
+
 
 @utlspon AP_Suppliers_Dff_U2
 
