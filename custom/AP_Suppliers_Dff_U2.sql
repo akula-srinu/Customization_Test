@@ -1,4 +1,4 @@
--- This line added by Srinivasa Rao Akula
+-- This line added by Srini
 
 -- Title AP_Suppliers_Dff_U2.sql
 -- Hookscript to get Ap_Suppliers DFF
