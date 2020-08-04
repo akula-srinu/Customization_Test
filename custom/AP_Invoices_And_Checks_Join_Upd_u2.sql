@@ -1,4 +1,4 @@
--- This line added by Srini
+-- This line added by Srinivas
 
 -- File Name: AP_Invoices_And_Checks_Join_Upd_u2.sql
 --
