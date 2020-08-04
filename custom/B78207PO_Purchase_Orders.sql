@@ -1,4 +1,4 @@
--- This line added by Srinivasa Rao Akula
+-- This line added by Srinivas
 
 -- *******************************************************************************
 -- FileName:             B78207PO_Purchase_Orders.sql
